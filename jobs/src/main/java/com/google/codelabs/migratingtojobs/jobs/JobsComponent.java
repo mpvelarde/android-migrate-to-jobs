@@ -11,4 +11,5 @@ import javax.inject.Singleton;
 @Component(modules = {AppModule.class})
 public interface JobsComponent extends RootComponent {
     public void inject(JobsGlobalState globalState);
+    public void inject(JobsCatalogListActivity activity);
 }
