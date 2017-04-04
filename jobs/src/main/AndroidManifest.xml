@@ -8,7 +8,8 @@
 
         <activity
             android:name=".JobsCatalogListActivity"
-            android:label="[Jobs] Book Catalog">
+            android:label="[Jobs] Book Catalog"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
