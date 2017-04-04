@@ -113,7 +113,7 @@ public class CatalogItem extends BaseEventListener implements Observable {
 
     private void setDownloadProgress(int progress) {
         mProto.downloadProgress = progress;
-        mPropertyChangeRegistry.notifyChange(this, BR.downloadProgress);
+        mPropertyChangeRegistry.notifyChange(this, com.google.codelabs.migratingtojobs.shared.BR.downloadProgress);
     }
 
     @Bindable
@@ -141,7 +141,7 @@ public class CatalogItem extends BaseEventListener implements Observable {
                             + " to " + STATUS_STRINGS[newStatus]);
             mProto.status = newStatus;
 
-            mPropertyChangeRegistry.notifyChange(this, BR.status);
+            mPropertyChangeRegistry.notifyChange(this, com.google.codelabs.migratingtojobs.shared.BR.status);
         }
     }
 

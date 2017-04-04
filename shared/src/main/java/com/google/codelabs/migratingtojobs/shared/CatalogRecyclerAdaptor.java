@@ -50,7 +50,7 @@ public class CatalogRecyclerAdaptor extends RecyclerView.Adapter<CatalogRecycler
     @Override
     public void onBindViewHolder(Holder holder, int position) {
         CatalogItem item = mStore.get(position);
-        holder.getBinding().setVariable(BR.item, item);
+        holder.getBinding().setVariable(com.google.codelabs.migratingtojobs.shared.BR.item, item);
 
         // trigger queued bindings early (as opposed to next animation frame)
         holder.getBinding().executePendingBindings();
