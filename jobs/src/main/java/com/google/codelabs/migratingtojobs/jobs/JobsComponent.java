@@ -8,7 +8,7 @@ import dagger.Component;
 import javax.inject.Singleton;
 
 @Singleton
-@Component(modules = {AppModule.class})
+@Component(modules = {AppModule.class, JobsModule.class})
 public interface JobsComponent extends RootComponent {
     public void inject(JobsGlobalState globalState);
     public void inject(JobsCatalogListActivity activity);
