@@ -12,4 +12,5 @@ import javax.inject.Singleton;
 public interface JobsComponent extends RootComponent {
     public void inject(JobsGlobalState globalState);
     public void inject(JobsCatalogListActivity activity);
+    public void inject(DownloaderJobService jobService);
 }
