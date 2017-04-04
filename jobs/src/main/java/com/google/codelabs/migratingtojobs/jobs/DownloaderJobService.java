@@ -4,7 +4,7 @@ import com.firebase.jobdispatcher.JobParameters;
 import com.firebase.jobdispatcher.JobService;
 
 public class DownloaderJobService extends JobService {
-    
+
     @Override
     public boolean onStartJob(JobParameters jobParameters) {
         return false;
